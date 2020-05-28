@@ -15,8 +15,8 @@
 # Martin Trigaux, 2019
 # Pernille Kristensen <pernillekristensen1994@gmail.com>, 2019
 # Ejner Sønniksen <ejner@vkdata.dk>, 2019
-# Sanne Kristensen <sanne@vkdata.dk>, 2019
 # lhmflexerp <lhm@flexerp.dk>, 2019
+# Sanne Kristensen <sanne@vkdata.dk>, 2020
 # JonathanStein <jstein@image.dk>, 2020
 # 
 msgid ""
@@ -366,7 +366,7 @@ msgstr "Tilføj tilpasset filter"
 #: code:addons/web/static/src/xml/base.xml:1111
 #, python-format
 msgid "Add Custom Group"
-msgstr ""
+msgstr "Tilføj tilpasset gruppe"
 
 #. module: web
 #. openerp-web
@@ -2062,7 +2062,7 @@ msgstr ""
 #: code:addons/web/static/src/xml/base.xml:644
 #, python-format
 msgid "Match records with the following rule:"
-msgstr ""
+msgstr "Søg poster ud fra følgende regler:"
 
 #. module: web
 #. openerp-web
@@ -2608,7 +2608,7 @@ msgstr "Opdatér venligst oversættelserne for:"
 #, python-format
 msgid ""
 "Please use the copy button to report the error to your support service."
-msgstr ""
+msgstr "Brug kopi-knappen til at rapportere fejlen til din support-service."
 
 #. module: web
 #: model_terms:ir.ui.view,arch_db:web.login_layout
@@ -3234,7 +3234,8 @@ msgstr ""
 msgid ""
 "The record has been modified, your changes will be discarded. Do you want to"
 " proceed?"
-msgstr "Der er sket ændringer, de vil blive kasseret. Ønsker du at fortsætte?"
+msgstr ""
+"Der er sket ændringer og de vil blive kasseret. Ønsker du at fortsætte?"
 
 #. module: web
 #. openerp-web

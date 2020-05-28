@@ -22,6 +22,7 @@ class StockInventory(models.Model):
 
     @api.multi
     def post_inventory(self):
+        res = True
         acc_inventories = self.filtered(lambda inventory: inventory.accounting_date)
         for inventory in acc_inventories:
             res = super(StockInventory, inventory.with_context(force_period_date=inventory.accounting_date)).post_inventory()
@@ -759,3 +760,5 @@ class ProcurementGroup(models.Model):
     def _run_scheduler_tasks(self, use_new_cursor=False, company_id=False):
         super(ProcurementGroup, self)._run_scheduler_tasks(use_new_cursor=use_new_cursor, company_id=company_id)
         self.env['stock.move']._run_fifo_vacuum()
+        if use_new_cursor:
+            self._cr.commit()
