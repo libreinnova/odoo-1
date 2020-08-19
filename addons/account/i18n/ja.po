@@ -2895,7 +2895,7 @@ msgstr "カラーインデクス"
 #: model:ir.model.fields,field_description:account.field_account_invoice__commercial_partner_id
 #: model:ir.model.fields,help:account.field_account_invoice_report__commercial_partner_id
 msgid "Commercial Entity"
-msgstr "商業体"
+msgstr "企業体"
 
 #. module: account
 #: code:addons/account/models/account_invoice.py:519
@@ -4863,7 +4863,7 @@ msgstr "請求書明細グループ化"
 #. module: account
 #: model:ir.model.fields,field_description:account.field_account_register_payments__group_invoices
 msgid "Group Invoices"
-msgstr ""
+msgstr "請求書をまとめる"
 
 #. module: account
 #: selection:account.tax,amount_type:0
@@ -6571,7 +6571,7 @@ msgstr "メモ"
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.view_account_payment_from_invoices
 msgid "Memo will be computed from invoices"
-msgstr ""
+msgstr "メモは各請求書ごとに計算されます。"
 
 #. module: account
 #. openerp-web
@@ -10288,7 +10288,7 @@ msgstr ""
 msgid ""
 "There are still unposted entries in the period you want to lock. You should "
 "either post or delete them."
-msgstr ""
+msgstr "ロックしようとしている期間に未記帳の会計仕訳が存在します。先にこれらを記帳または削除してください。"
 
 #. module: account
 #: code:addons/account/models/account_payment.py:452
@@ -11412,7 +11412,7 @@ msgstr ""
 #, python-format
 msgid ""
 "You cannot add/modify entries prior to and inclusive of the lock date %s"
-msgstr ""
+msgstr "ロック日 %s 以前の日付で仕訳を作成/修正することはできません。"
 
 #. module: account
 #: code:addons/account/models/account_move.py:375
@@ -11421,6 +11421,7 @@ msgid ""
 "You cannot add/modify entries prior to and inclusive of the lock date %s. "
 "Check the company settings or ask someone with the 'Adviser' role"
 msgstr ""
+"ロック日 %s 以前の日付で仕訳を作成/修正することはできません。会社設定を確認するか、「請求マネジャー」権限を持つユーザにご相談ください。"
 
 #. module: account
 #: code:addons/account/models/company.py:283
@@ -11713,6 +11714,12 @@ msgid ""
 "You should configure the 'Loss Exchange Rate Account' in the accounting "
 "settings, to manage automatically the booking of accounting entries related "
 "to differences between exchange rates."
+msgstr ""
+
+#. module: account
+#: code:addons/account/models/account_cash_rounding.py:33
+#, python-format
+msgid "Please set a positive rounding value."
 msgstr ""
 
 #. module: account
